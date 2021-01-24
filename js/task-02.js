@@ -10,11 +10,10 @@ const ingredients = [
   ];
 
 
-const liMaker = (string) => {
-    const liItem = document.createElement('li'); 
-    liItem.textContent = string;
+function createListItem (str) {
+    const listItem = document.createElement('li');
+    listItem.textContent = str;
+    return listItem;
+}
 
-    return liItem;
-};
-
-ingredientList.append(...ingredients.map(liMaker));
+ingredientList.append(...ingredients.map(createListItem));
