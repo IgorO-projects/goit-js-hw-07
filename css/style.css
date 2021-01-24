@@ -1,0 +1,5 @@
+.task03__gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
