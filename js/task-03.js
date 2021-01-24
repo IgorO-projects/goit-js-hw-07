@@ -18,10 +18,6 @@ const images = [
   const galleryList = document.querySelector('#gallery');
   const galleryItem = document.createElement('li');
 
-//   images.forEach(({url, alt}) => {
-//       const string = `<img src=${src} alt=${alt}>`;
-//   })
-
   const galleryItems = images.reduce((string, { url, alt }) => {
     return string += `<li><img src="${url}" alt="${alt}" width="320"></li>`;
   }, '');
